@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Rookwood's Roast</title>
+    <!-- Bootstrap CSS: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons: https://icons.getbootstrap.com/ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand btn btn-outline-success" href="index.html">The Rookwood's Roast</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active btn btn-success" aria-current="page" a href="index.html">Home</a>
+        <a class="nav-link" href="#">About</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero
+       Position utilities: https://getbootstrap.com/docs/5.3/utilities/position/
+       Border radius utilities: https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
+  <header class="position-relative overflow-hidden text-white rounded-bottom-4 mx-md-3">
+    <!-- Object fit (background image): https://getbootstrap.com/docs/5.3/utilities/object-fit/ -->
+    <img src="img/c08a3249a2deecd747cba8dbbcec7dc2.jpg" alt="" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+    <!-- Opacity (image overlay): https://getbootstrap.com/docs/5.3/utilities/opacity/ -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <!-- Container: https://getbootstrap.com/docs/5.3/layout/containers/ -->
+    <div class="container position-relative py-5">
+      <!-- Grid: https://getbootstrap.com/docs/5.3/layout/grid/ -->
+      <div class="row my-md-5">
+        <div class="col-md-9 col-lg-6">
+          <!-- Badge: https://getbootstrap.com/docs/5.3/components/badge/ -->
+          
+          <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
+          <h1 class="display-4 mb-3">The Rookwood's Roast</h1>
+          <p class="mb-4">Where coffee comes in its purest form.</p>
+
+          <!-- Buttons: https://getbootstrap.com/docs/5.3/components/buttons/
+               Stacked-to-row layout: https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons -->
+          
+
+          <!-- Unstyled list: https://getbootstrap.com/docs/5.3/content/typography/#unstyled
+               Flex utilities: https://getbootstrap.com/docs/5.3/utilities/flex/ -->
+          <ul class="list-unstyled d-flex flex-column flex-sm-row gap-3 mb-0">
+            <li class="d-flex align-items-center gap-2">
+              <!-- Icon: https://icons.getbootstrap.com/icons/clock/ -->
+              <i class="bi bi-clock text-success" aria-hidden="true"></i>
+              8AM - 6PM Daily
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <!-- Icon: https://icons.getbootstrap.com/icons/geo-alt/ -->
+              <i class="bi bi-geo-alt text-success" aria-hidden="true"></i>
+              Downtown Location
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+    <section class="container py-5">
+        <div class="row justify-content-center text-center mb-4 mb-md-5">
+            <div class="col-md-8 col-lg-6">
+                <h1 class="display-6 mb-3">About The Rookwood's Roast</h1>
+          <p class="text-body-secondary mb-0">Want to know more about us? We're happy to share.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="container py-5">
+<div class="row">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-success" href="#list-item-1">Our Story</a>
+      <a class="list-group-item list-group-item-success" href="#list-item-2">What We Believe</a>
+      <a class="list-group-item list-group-item-success" href="#list-item-3">Closing</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Our Story</h4>
+      <p>The owner of The Rookwood's Roast, Jane Doe, was tired of paying for expensive coffee that wasn't up to her usual standards. One morning, she decided to make her own coffee, having enough of money wasted on companies who focused more on revenue, rather than people. When said coffee was maid, she was delighted by how much better it tasted, pleased from the effort by making something so delicious. A thought then struck... "What if I made this into a business?" Since then, Jane Doe has managed to open 5 different locations around the state, providing the highest quality of beverages to our customers.</p>
+      <h4 id="list-item-2">What We Believe</h4>
+      <p>We believe that high quality beverages are the most important part of your experience. Every week, we get a fresh shipment of local coffee's and tea's, and only make the fresh drinks after you order them. We are also environmentally concious, using methods that reduce our carbon emissions, as well as not using any plastic. Our to-go cups and straws are made from recycled cardboard and bamboo, giving the same strength as plastic. We also offer non-dairy options, such as almond milk, oat milk, and soy milk. It's important that we get your preferences and order right, so you never have to worry about a wrong coffee order again.</p>
+      <h4 id="list-item-3">Closing</h4>
+      <p>The journey hasn't been easy, but we pride ourselves in what we have accomplished thus far. We plan on opening more locations, will be more environmentally concious, and will give you the comforting drink of your dreams.</p>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+  <!-- Footer
+       Responsive container: https://getbootstrap.com/docs/5.3/layout/containers/#responsive-containers -->
+  <footer class="container-md px-0 px-md-3">
+    <!-- Color and background helper (text-bg-dark): https://getbootstrap.com/docs/5.3/helpers/color-background/ -->
+    <div class="text-bg-dark rounded-top-4 text-center px-3 py-3">
+      <p class="mb-1">The Rookwood's Roast</p>
+      <p class="small text-success mb-0">123 Main Street, Downtown | Open 8AM - 6PM Daily</p>
+    </div>
+  </footer>
     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
